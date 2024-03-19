@@ -1,0 +1,32 @@
+print( "\t")
+print( "\t")
+
+receptes = {
+    "Omlete": ["olas", "piens"],
+    "Mafini": ["milti", "olas", "piens", "cepamais pulveris"],
+    "Pankūkas": ["milti", "piens", "olas"],
+    "Karstā šokolāde" : ["piens", " cukurs", "šokolāde"],
+    "Cepumi" : ["milti", "sviests", "cukurs"],
+}
+
+sastavdalas = input("Vēlies kaut ko uzēst, bet nav ideju? Ļauj man palīdzēt! Ievadi savas pieejamās sastāvdaļas no šīm - olas, piens, milti, cepamais pulveris, sviests, šokolāde, atdalot tās ar komatiem: ").split(",")
+
+sastavdalas = [s.strip() for s in sastavdalas]
+
+pielaujamās_receptes = []
+
+for recepte, sastavdalas_recepte in receptes.items():
+    if all(sastavdala in sastavdalas for sastavdala in sastavdalas_recepte):
+        pielaujamās_receptes.append(recepte)
+
+
+if pielaujamās_receptes:
+    print("Jūs varat uztaisīt šādus ēdienus: ")
+    for recepte in pielaujamās_receptes:
+        print("- " + recepte)
+else:
+    print("Ar dotajām sastāvdaļām nevar uztaisīt nevienu ēdienu.")
+
+    print( "\t")
+    print( "\t")\
+
