@@ -1,12 +1,17 @@
 print( "\t")
 print( "\t")
 
+TYELLOW =  '\033[33m' # Green Text
+ENDC = '\033[m' # reset to the defaults
+
+
+
 receptes = {
-    "Omlete": ["olas", "piens"],
-    "Mafini": ["milti", "olas", "piens", "cepamais pulveris"],
-    "Pankūkas": ["milti", "piens", "olas"],
-    "Karstā šokolāde" : ["piens", " cukurs", "šokolāde"],
-    "Cepumi" : ["milti", "sviests", "cukurs"],
+    "Omlete🥚": ["olas", "piens"],
+    "Mafini🧁": ["milti", "olas", "piens", "cepamais pulveris"],
+    "Pankūkas🥞": ["milti", "piens", "olas"],
+    "Karstā šokolāde🥛🍫" : ["piens", "šokolāde"],
+    "Cepumi🍪" : ["milti", "sviests", "cukurs"],
 }
 
 sastavdalas = input("Vēlies kaut ko uzēst, bet nav ideju? Ļauj man palīdzēt! Ievadi savas pieejamās sastāvdaļas no šīm - olas, piens, milti, cepamais pulveris, sviests, šokolāde, atdalot tās ar komatiem: ").split(",")
@@ -21,12 +26,15 @@ for recepte, sastavdalas_recepte in receptes.items():
 
 
 if pielaujamās_receptes:
+
     print("Jūs varat uztaisīt šādus ēdienus: ")
     for recepte in pielaujamās_receptes:
-        print("- " + recepte)
+        print("- " + TYELLOW + recepte, ENDC)
 else:
     print("Ar dotajām sastāvdaļām nevar uztaisīt nevienu ēdienu.")
 
     print( "\t")
-    print( "\t")\
+    print( "\t")
+
+
 
