@@ -18,3 +18,14 @@ search_query = input("Ievadi meklēšanas vaicājumu: ")
 google_search_url = "https://www.google.com/search?q="
 full_url = f'<a href="{google_search_url}{search_query.replace(" ", "+")}">Uzspied šeit</a>'
 print("Aktīvais links: ", full_url)
+
+
+search_query = input("Ievadi meklēšanas vaicājumu: ")
+google_search_url = "https://www.google.com/search?q="
+form_code = f'''
+<form action="{google_search_url}" method="get" target="_blank">
+    <input type="hidden" name="q" value="{search_query}">
+    <input type="submit" value="Uzspied šeit">
+</form>
+'''
+print("Aktīvais links: ", form_code)
