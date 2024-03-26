@@ -8,12 +8,12 @@ ENDC = '\033[m' # reset to the defaults
 
 
 receptes = {
-    "Omlete🥚": ["olas", "piens"],
-    "Mafini🧁": ["milti", "olas", "piens", "cepamais pulveris"],
-    "Pankūkas🥞": ["milti", "piens", "olas"],
-    "Karstā šokolāde🥛🍫" : ["piens", "šokolāde"],
-    "Cepumi🍪" : ["milti", "sviests", "cukurs"],
-    "Kūka🍰": ["milti", "olas", "piens", "cepamais pulveris"],
+    "Omlete": ["olas", "piens"],
+    "Mafini": ["milti", "olas", "piens", "cepamais pulveris"],
+    "Pankūkas": ["milti", "piens", "olas"],
+    "Karstā šokolāde" : ["piens", "šokolāde"],
+    "Cepumi" : ["milti", "sviests", "cukurs"],
+    "Kūka": ["milti", "olas", "piens", "cepamais pulveris"],
 
 }
 
