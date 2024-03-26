@@ -13,6 +13,8 @@ receptes = {
     "Pankūkas🥞": ["milti", "piens", "olas"],
     "Karstā šokolāde🥛🍫" : ["piens", "šokolāde"],
     "Cepumi🍪" : ["milti", "sviests", "cukurs"],
+    "Kūka🍰": ["milti", "olas", "piens", "cepamais pulveris"],
+
 }
 
 sastavdalas = input(f"Vēlies kaut ko uzēst, bet nav ideju? \nĻauj man palīdzēt! \nIevadi savas pieejamās sastāvdaļas no šīm - olas, piens, milti, cepamais pulveris, sviests, šokolāde, atdalot tās ar komatiem: ").split(",")
@@ -36,9 +38,24 @@ else:
 
 
 link = "https://www.google.com/search?q=" 
-search_query = input("Ja esi aradis/usi to ko sirds kāro, ļauj mums tev ātri un vinkārši atrast perfekto recepti, ieraksti to ēdienu, kurš no šiem tev visvairāk iet pie sirds:") 
+search_query = input("Ja esi aradis/usi to ko sirds kāro, ļauj mums tev ātri un vinkārši atrast perfekto recepti, ieraksti to ēdienu, kurš no šiem tev visvairāk iet pie sirds: ") 
 full_link = link + search_query.replace(" ", "+") 
-print("Atradām! Aktīvais links: ", full_link)
+print("Aktīvais links: ", full_link)
+
+
+# search_query = input("Ja esi atradis/usi to ko sirds kāro, ļauj mums tev ātri un vinkārši atrast perfekto recepti, ieraksti to ēdienu, kurš no šiem tev visvairāk iet pie sirds:  ")
+# google_search_url = "https://www.google.com/search?q="
+# form_code = f'''
+# <form action="{google_search_url}" method="get" target="_blank">
+#     <input type="hidden" name="q" value="{search_query}">
+#     <input type="submit" value="Uzspied šeit">
+# </form>
+# '''
+# print(f"Aktīvais links: ", form_code)
+
+
+
+
 
 print( "\t")
 print( "\t")
