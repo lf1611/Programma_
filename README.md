@@ -43,8 +43,6 @@ search_query = input("Ja esi aradis/usi to ko sirds kāro, ļauj mums tev ātri 
 full_link = link + search_query.replace(" ", "+") 
 print("Aktīvais links: " , full_link )
 
-    search_query = input("Ievadi ēdienu, kurš tev gribētos pagatavot: ")
-    full_link = link + search_query.replace(" ", "+")
-    print("Aktīvais links: " , full_link)
+   
 
 
