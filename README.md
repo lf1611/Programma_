@@ -24,7 +24,7 @@ receptes = {
     "Saldējums🍦" : ["piens", "saldais krējums", "olas", "cukurs"]
 }
 
-sastavdalas = input("Vēlies kaut ko uzēst, bet nav ideju? \nĻauj man palīdzēt! \nIevadi savas pieejamās sastāvdaļas no šīm - olas, piens, saldais krējums, milti, cepamais pulveris, sviests, šokolāde, raugs atdalot tās ar komatiem: ").split(",")
+sastavdalas = input("Vēlies kaut ko uzēst, bet nav ideju? \nĻauj man palīdzēt! \nIevadi savas pieejamās sastāvdaļas no šīm - olas, piens, saldais krējums, milti, cepamais pulveris, sviests, šokolāde, raugs, soda atdalot tās ar komatiem: ").split(",")
 sastavdalas = [s.strip() for s in sastavdalas]
 
 pielaujamās_receptes = atrod_receptes(receptes, sastavdalas)
