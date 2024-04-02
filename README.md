@@ -63,15 +63,38 @@ print("Aktīvais links: " , full_link )
 
 
 print( "\t")
+
+
+
+
+
+
 print( "\t")
 
 
 
+def atrod_receptes(receptes, sastavdalas):
+    pielaujamās_receptes = []
+    for recepte, sastavdalas_recepte in receptes.items():
+        if all(sastavdala in sastavdalas for sastavdala in sastavdalas_recepte):
+            pielaujamās_receptes.append(recepte)
+    return pielaujamās_receptes
+
+
+
+
 
 
 
 
 print( "\t")
 print( "\t")
+
+
+def meklē_recepti_internetā():
+    link = "https://www.google.com/search?q="
+    search_query = input("Ievadi ēdienu, kurš tev gribētos pagatavot: ")
+    full_link = link + search_query.replace(" ", "+")
+    print("Aktīvais links: " , full_link)
 
 
